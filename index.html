@@ -1,138 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>minggu 1</title>
-  </head>
-  <body>
-    <header>
-      <img
-        src="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp"
-        alt="foto elsa frozen bukan saya"
-        width="100px"
-        height="100px"
-      />
-      <h1>Hay saya Lorem, ipsum.</h1>
-      <p>seorang dolor sit</p>
-    </header>
-    <aside>
-      <nav>
-        <ul>
-          <li><a href="#tentang">tentang saya</a></li>
-          <li><a href="#kerja">pengalaman kerja</a></li>
-          <!-- <li><a href="#">pendidikan</a></li>
-                <li><a href="#">setifikasi</a></li> -->
-          <li><a href="#hubungi">hubungi saya</a></li>
-        </ul>
-      </nav>
-    </aside>
-    <main>
-      <section>
-        <h2 id="tentang">tentang saya</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
-          recusandae ducimus placeat! Fugiat similique minus labore doloremque
-          esse, non impedit dolorum vel natus quidem dolor! Earum, amet atque
-          eveniet nihil reiciendis nesciunt fugiat voluptate illum animi nulla
-          vel quam quo nobis optio quaerat alias accusantium asperiores
-          laudantium sed reprehenderit sunt?
-        </p>
-        <figure>
-          <video
-            width="500"
-            height="300"
-            poster="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp"
-            src="https://res.cloudinary.com/silv/video/upload/v1663428862/prak/videoplayback_fbzqpw.mp4"
-            muted
-            controls
-          ></video>
-          <figcaption>video saya</figcaption>
-        </figure>
-      </section>
-      <section>
-        <h2 id="kerja">pengalaman kerja</h2>
-        <table border="1">
-          <thead>
-            <tr>
-              <th rowspan="2">no</th>
-              <th rowspan="2">posisi</th>
-              <th rowspan="2">perusahaan</th>
-              <th colspan="2">waktu</th>
-              <!-- <th rowspan="2" colspan="2">
-                  <table border="1">
-                <tr><td colspan="2">waktu</td></tr>
-                  <tr>
-                    <td>masuk</td>
-                    <td>keluar</td>
-                  </tr>
-                </table>
-              </th> -->
-            </tr>
-            <tr>
-              <th>mulai</th>
-              <th>selesai</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>lorem</td>
-              <td>ipsum</td>
-              <td>2131</td>
-              <td>2231</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>sit</td>
-              <td>amet</td>
-              <td>1131</td>
-              <td>2131</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- <section>
-            <h2>pendidikan</h2>
-        </section>
-        <section>
-            <h2>sertifikasi</h2>
-        </section> -->
-      <section>
-        <h2 id="hubungi">hubungi saya</h2>
-        <div>
-            <form action="#" method="get">
-                <div>
-                    <label for="nama">nama:</label>
-                    <input type="text" name="nama" id="nama">
-                </div>
-                <div>
-                    <p>sudah nonton film saya?</p>
-                    <input type="radio" name="sudah" id="sudah">
-                    <label for="sudah">sudah</label>
-                    <br>
-                    <input type="radio" name="belum" id="belum">
-                    <label for="belum">belum</label>
-                </div>
-                <br>
-                <div>
-                    <input type="checkbox" name="ini" id="ini">
-                    <label for="ini">ini</label><br>
-                    <input type="checkbox" name="itu" id="itu">
-                    <label for="itu">itu</label><br>
-                    <input type="checkbox" name="anu" id="anu">
-                    <label for="anu">anu</label>
-                </div>
-                <div>
-                    <input type="submit" value="kirim">
-                </div>
-            </form>
-        </div>
-      </section>
-    </main>
-    <footer>
-        <p>ini akhir</p>
-    </footer>
-  </body>
+<head>
+    <title>Document</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
+            font-family: Poppins;
+        }
+        h1, h2, h3, h4, div, span, section {
+            border: solid 10px rgb(0, 0, 0, 1);
+        }
+        h1:hover {
+            color: red;
+        }
+        div {
+            margin: 20px;
+        }
+        span {
+            margin: 20px;
+        }
+        .flex {
+            display: flex;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .box3 {
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            box-sizing: content-box;
+        }
+        section {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        .basing {
+            grid-row-start: 2;
+            grid-column-start: 3;
+        }
+    </style>
+</head>
+<body>
+    <section >
+        <h4>1Ini heading</h4>
+        <h4>2Ini heading</h4>
+        <h4>Lorem ipsum,</h4>
+        <h4>1Ini heading</h4>
+        <h4>2Ini heading</h4>
+        <h4>Lorem ipsum,</h4>
+        <h4>1Ini heading</h4>
+        <h4>2Ini heading</h4>
+        <h4>Lorem ipsum,</h4>
+        <h4 class="basing">Basing</h4>
+    </section>
+    
+</body>
 </html>
+
+

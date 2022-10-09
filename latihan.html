@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MINGGU 2</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+            * {
+                font-family: Poppins;
+                margin: 0;
+            }
+            .header {
+                background-color: rgb(174, 227, 236);
+                color: #fff;
+                overflow: auto;
+                padding: 40px 20px 0 20px;
+                font-size: xx-large;
+            }
+            .header img {
+                width: 20%;
+                display: block;
+                float: left;
+                margin-right: 30px;
+            }
+            .header h1 span {
+                color: rgb(118, 144, 202);
+            }
+            header {
+                position: sticky;
+                top: 0;
+                background-color: rgb(118, 144, 202);
+                z-index: 2;
+                margin: 0;
+                padding: 20px;
+            }
+            header ul {
+                display: flex;
+                gap: 16px;
+                justify-content: end;
+            }
+            header ul li {
+                display: block;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            header a {
+                color: #f5f5f5;
+                text-decoration: none;
+                letter-spacing: 2px;
+                font-size: large;
+            }
+            header a:hover {
+                color: white;
+            }
+            .sections {
+                padding: 40px 20px 40px 60px;
+            }
+            #tentang, #kerja, #hubungi {
+                display: block;
+                color: white;
+                background-color: rgb(118, 144, 202);
+                width: fit-content;
+                margin-left: -60px;
+                padding: 10px 20px;
+                margin-bottom: 40px;
+            }
+            
+            .about-me {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+            }
+            video {
+                width: 640px;
+                height: 360px;
+            }
+            figcaption {
+                font-weight: 600;
+                font-size: medium;
+            }
+            .text-about-me {
+                background-color: #F6F6F6;
+                padding: 20px;
+                border-radius: 16px;
+                filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+            }
+            .text-about-me p {
+                display: block;
+                font-size: large;
+            }
+            .float-img {
+                float: left;
+            }
+            .experience {
+                padding: 30px;
+            }
+            table {
+                width: 100%;
+            }
+            table, thead, tbody, tr, th, td {
+                border: solid 1px lightblue;
+                border-collapse: collapse
+            }
+            th, td {
+                padding: 8px 16px;
+                
+            }
+            td {
+                color: #0f0f0f;
+            }
+            thead {
+                text-transform: uppercase;
+                background-color: rgb(174, 227, 236);
+                color: white;
+            }
+            tbody {
+                text-transform: capitalize;
+            }
+            .table-number, .years {
+                text-align: center;
+            }
+            form {
+                display: block;
+                width: 25%;
+                background-color: rgb(174, 227, 236);
+                filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+                padding: 40px;
+                border-radius: 20px;
+            }
+            .form-row {
+                width: 250px;
+                margin-bottom: 20px;
+            }
+            .choices {
+                display: flex;
+                gap: 20px;
+            }
+            input {
+                background-color: #f5f5f5;
+            }
+            input[type="text"] {
+                display: block;
+                width: 100%;
+                outline: none;
+                border: none;
+            }
+            button[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 8px auto;
+                text-align: center;
+                border-radius: 8px;
+                outline: none;
+                border: none;
+                background-color: rgb(118, 144, 202);
+                color: white;
+                text-transform: uppercase;
+                font-size: large;
+            }
+            footer {
+                text-align: center;
+                font-weight: 600;
+                background-color: #f3f3f3;
+                color: rgb(118, 144, 202);
+                padding: 20px;
+                font-size: 20px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <section class="header">
+            <img src="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp" alt="foto elsa asle"/>
+            <h1>Hai, saya <span>Elsa Asle</span></h1>
+            <p>Seorang Viking menakutkan</p>
+        </section>
+
+        <header>
+            <ul>
+                <li><a href="#tentang">tentang saya</a></li>
+                <li><a href="#kerja">pengalaman kerja</a></li>
+                <li><a href="#hubungi">hubungi saya</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="sections">
+                <h2 id="tentang"># tentang saya</h2>
+                <div class="about-me">
+                    <div class="text-about-me">
+                        <img class="float-img" src="L.jpg" alt="huruf L">
+                        <p>
+                            orem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                            recusandae ducimus placeat! Fugiat similique minus labore doloremque
+                            esse, non impedit dolorum vel natus quidem dolor! Earum, amet atque
+                            eveniet nihil reiciendis nesciunt fugiat voluptate illum animi nulla
+                            vel quam quo nobis optio quaerat alias accusantium asperiores
+                            laudantium sed reprehenderit sunt?
+                        </p>
+                    </div>
+                    <figure>
+                        <video
+                            poster="https://res.cloudinary.com/silv/image/upload/v1663425531/prak/pngwing.com_wlr6vc.webp"
+                            src="https://res.cloudinary.com/silv/video/upload/v1663428862/prak/videoplayback_fbzqpw.mp4"
+                            muted
+                            controls
+                        ></video>
+                        <figcaption>Lorem ipsum ipsum lorem</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="sections">
+                <h2 id="kerja"># pengalaman kerja</h2>
+                <div class="experience">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">#</th>
+                                <th rowspan="2">posisi</th>
+                                <th rowspan="2">perusahaan</th>
+                                <th colspan="2">waktu</th>
+                            </tr>
+                            <tr>
+                                <th>mulai</th>
+                                <th>selesai</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-number">1</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td>dicta modi maiores</td>
+                                <td class="years">1928</td>
+                                <td class="years">1945</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">2</td>
+                                <td>Id provident excepturi</td>
+                                <td>veniam dolores adipisci</td>
+                                <td class="years">1945</td>
+                                <td class="years">1973</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">3</td>
+                                <td>repellendus debitis iste</td>
+                                <td>adipisicing elit Accusamus</td>
+                                <td class="years">1973</td>
+                                <td class="years">1982</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">4</td>
+                                <td>corporis quidem iure</td>
+                                <td>sit amet consectetur</td>
+                                <td class="years">1982</td>
+                                <td class="years">2022</td>
+                            </tr>
+                            <tr>
+                                <td class="table-number">5</td>
+                                <td>tenetur nisi architecto</td>
+                                <td>Lorem ipsum dolor</td>
+                                <td class="years">2022</td>
+                                <td class="years">2200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="sections">
+                <h2 id="hubungi"># hubungi saya</h2>
+                <div>
+                    <form action="#" method="get">
+                        <div class="form-row">
+                            <label for="nama" id="name-label">Nama
+                                <input type="text" name="nama" id="nama">
+                            </label>
+                        </div>
+                        <div class="form-row">
+                            <p>Sudah nonton video saya?</p>
+                            <div class="choices">
+                                <label for="sudah">
+                                    <input type="radio" name="sudah_nonton" id="sudah">
+                                    Sudah
+                                </label>
+                                <br>
+                                <label for="belum">
+                                    <input type="radio" name="sudah_nonton" id="belum">
+                                    Belum
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            Apa coba?
+                            <div class="choices">
+                                    <label for="ini">
+                                        <input type="checkbox" name="ini" id="ini">
+                                        Ini
+                                    </label>
+                                    <label for="itu">
+                                        <input type="checkbox" name="itu" id="itu">
+                                        Itu
+                                </label>
+                                <label for="anu">
+                                    <input type="checkbox" name="anu" id="anu">
+                                    Anu
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>INI FOOTER</p>
+        </footer>
+    </body>
+</html>
